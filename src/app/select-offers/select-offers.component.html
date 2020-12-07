@@ -1,3 +1,22 @@
-<p>select-offers works!</p>
-<footer>
-</footer>
+
+<div>
+  <p>{{selectedOffers.size}}</p>
+  <div *ngFor="let product of products">
+    <div (click)="selectOffer(product.id)">
+
+          <h3>{{product.name}} - {{product.brand}}</h3>
+
+      <img src = "{{product.image}}" alt="Product image" >
+      <input type = "image" (click) = "seeProductDetails(product)" src = "../assets/icon_check.svg" alt="See offer details" />
+    </div>
+  </div>
+  <div *ngIf = "(currentProduct| json) != '{}'">
+    <app-offer-details
+    [product] = "currentProduct"
+    (onSelectOffer) = "selectOffer(currentProduct.id)" >
+    </app-offer-details>
+  </div>
+  <footer>
+
+  </footer>
+</div>

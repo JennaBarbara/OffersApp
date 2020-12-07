@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { SelectOffersComponent } from './select-offers/select-offers.component';
-
+import { OfferDetailsComponent } from './offer-details/offer-details.component'
 const routes: Routes = [
   { path: '', redirectTo: '/offers', pathMatch: 'full' },
-  { path: 'offers', component: SelectOffersComponent }
-//  { path: 'detail/:id', component: OfferDetailsComponent }
+  { path: 'offers', component: SelectOffersComponent },
+  { path: 'detail/:id', component: OfferDetailsComponent }
 ];
 
 @NgModule({
