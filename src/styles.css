@@ -22,10 +22,7 @@ h6 {
 }
 
 .toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   height: 31px;
   display: flex;
   background-color: #5ac8fa;
@@ -48,7 +45,6 @@ h6 {
 .progressbar {
   padding: 0px;
   margin: 10px 0px;
-
 }
 .progressbar li {
     list-style-type: none;
@@ -102,10 +98,11 @@ h6 {
     background-color: #bfbfbf;
 }
 
-
 .content {
+  position: relative;
+  left: 0;
+  right: 0;
   display: flex;
-  margin: 48px 0px 32px;
   flex-direction: column;
   align-items: center;
 }
@@ -195,6 +192,36 @@ h6 {
  background-color: #fbfdf6;
 }
 
+.btn {
+  position: fixed;
+  bottom: 0;
+  margin-top: 8px;
+  align-items: center;
+  line-height: 20px;
+  height: 230px;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+
+footer {
+  position: relative;
+  width: auto%;
+  height: 180px;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.footer-column {
+  width: 170px;
+  float: left;
+}
+.footer-column a {
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  padding: 20px;
+}
 
 
 /* .terminal {

@@ -1,7 +1,9 @@
+
 <div class="toolbar" role="banner">
   <span>BabyFirst</span>
 </div>
-<div class = "content">
+<div class = "content" >
+
     <div class="progressbar-container">
       <ul class="progressbar">
         <li>Profile</li>
@@ -9,8 +11,9 @@
         <li>Success</li>
       </ul>
     </div>
+
   <h3>Pick your offers</h3>
-  <!-- <p>{{selectedOffers.size}}</p> -->
+  <p>{{selectedOffers.size}}</p>
     <div class="card-container">
       <a class="card" *ngFor="let product of products" (click)="selectOffer(product.id)">
         <div class="card-image-container" >
@@ -22,8 +25,6 @@
         <p>{{product.name}}</p>
       </a>
     </div>
-    <footer>
-    </footer>
   </div>
 <div *ngIf = "(currentProduct| json) != '{}'">
     <app-offer-details
@@ -31,3 +32,18 @@
     (onSelectOffer) = "selectOffer(currentProduct.id)" >
     </app-offer-details>
 </div>
+<footer>
+  <img alt="BabyFirst Logo" src="../assets/img_publisher_logo.svg"/>
+  <div class="footer-link-container">
+    <div class="footer-column">
+      <a>Terms & Conditions</a>
+      <a>Privacy Policy</a>
+      <a>My Account</a>
+    </div>
+    <div class="footer-column">
+      <a>Terms of Service</a>
+      <a>Contact Us</a>
+      <a>Logout</a>
+    </div>
+  </div>
+</footer>

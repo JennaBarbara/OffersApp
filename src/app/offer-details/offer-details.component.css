@@ -1,0 +1,14 @@
+.product-image-container {
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.product-image {
+  display: block;
+  max-height: 130px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
