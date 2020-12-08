@@ -2,7 +2,6 @@
   <span>BabyFirst</span>
 </div>
 <div class = "content">
-
     <div class="progressbar-container">
       <ul class="progressbar">
         <li>Profile</li>
@@ -10,7 +9,6 @@
         <li>Success</li>
       </ul>
     </div>
-
   <h3>Pick your offers</h3>
   <!-- <p>{{selectedOffers.size}}</p> -->
     <div class="card-container">
@@ -24,6 +22,8 @@
         <p>{{product.name}}</p>
       </a>
     </div>
+    <footer>
+    </footer>
   </div>
 <div *ngIf = "(currentProduct| json) != '{}'">
     <app-offer-details
