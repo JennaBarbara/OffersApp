@@ -1,1 +1,150 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Roboto", roboto;
+  color: #333;
+  font-weight: 500;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 37px;
+  display: flex;
+  background-color: #5ac8fa;
+  color: white;
+  font-weight: 600;
+  padding-top: 17px;
+  padding-left: 25px;
+}
+
+.content {
+  display: flex;
+  margin: 82px 0px 32px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  background-color: #ffffff;
+  height: 240px;
+  width: 160px;
+  margin: 0 7px 17px;
+  padding: 14px;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0;
+  font-size: 16px;
+}
+
+.card-image-container {
+  display: block;
+  position: relative;
+  height: 150px;
+  padding: 10px;
+}
+
+.selected-icon {
+  position: absolute;
+  height: 20px;
+  top: 0;
+}
+
+.detail-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-image {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  max-height: 130px;
+  max-width: 100%;
+  width: auto;
+}
+
+/* tag styling */
+.tag {
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+ .tag[title="All Ages"] {
+  color: #334659;
+  border-color: #334659;
+  background-color: #f6f7f8;
+}
+
+.tag[title="Newborn"] {
+ color: #9c27b0;
+ border-color: #9c27b0;
+ background-color: #faf7fc;
+}
+
+.tag[title="Toddler"] {
+ color: #00bcd4;
+ border-color: #00bcd4;
+ background-color: #f7fdfd;
+}
+
+.tag[title="Kids 4+"] {
+ color: #92c45c;
+ border-color: #92c45c;
+ background-color: #fbfdf6;
+}
+
+
+
+/* .terminal {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding-top: 45px;
+  margin-top: 8px;
+  overflow: hidden;
+  background-color: rgb(15, 15, 16);
+} */
+
+
+
+/* Responsive Styles */
+/* @media screen and (max-width: 767px) {
+
+
+
+} */

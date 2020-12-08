@@ -1,22 +1,25 @@
+<div class="toolbar" role="banner">
+  <span>BabyFirst</span>
+</div>
 
-<div>
-  <p>{{selectedOffers.size}}</p>
-  <div *ngFor="let product of products">
-    <div (click)="selectOffer(product.id)">
-
-          <h3>{{product.name}} - {{product.brand}}</h3>
-
-      <img src = "{{product.image}}" alt="Product image" >
-      <input type = "image" (click) = "seeProductDetails(product)" src = "../assets/icon_check.svg" alt="See offer details" />
+<div class = "content">
+  <h3>Pick your offers</h3>
+  <!-- <p>{{selectedOffers.size}}</p> -->
+    <div class="card-container">
+      <a class="card" *ngFor="let product of products" (click)="selectOffer(product.id)">
+        <div class="card-image-container" >
+          <img class="card-image" src = "{{product.image}}" alt="Product image" />
+          <img class= "selected-icon" src = "../assets/icon_check.svg" alt="Offer selected" />
+          <input class= "detail-btn" type = "image" (click) = "seeProductDetails(product)" src = "../assets/icon_info.svg" alt="See offer details" />
+        </div>
+        <span class = "tag" title={{product.tag}} >{{product.tag}}</span>
+        <p>{{product.name}}</p>
+      </a>
     </div>
   </div>
-  <div *ngIf = "(currentProduct| json) != '{}'">
+<div *ngIf = "(currentProduct| json) != '{}'">
     <app-offer-details
     [product] = "currentProduct"
     (onSelectOffer) = "selectOffer(currentProduct.id)" >
     </app-offer-details>
-  </div>
-  <footer>
-
-  </footer>
 </div>
