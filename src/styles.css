@@ -26,7 +26,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  height: 37px;
+  height: 31px;
   display: flex;
   background-color: #5ac8fa;
   color: white;
@@ -35,9 +35,72 @@ h6 {
   padding-left: 25px;
 }
 
+/* progress bar styling */
+
+.progressbar-container {
+  left: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #f4f4f4;
+    z-index: -2;
+}
+
+.progressbar {
+  padding: 0;
+  counter-reset: step;
+  margin: 10px auto;
+
+}
+.progressbar li {
+    list-style-type: none;
+    width: 33%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    color: #5bde9a;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #3a99d8;
+}
+.progressbar li:after {
+    width: 100%;
+    height: 7px;
+    content: '';
+    position: absolute;
+    background-color: #5ee09e;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: #3a99d8;
+}
+.progressbar li.active:before {
+    border-color: #55b776;
+}
+.progressbar li.active + li:after {
+    color: #eaeaea;
+    background-color: #55b776;
+}
+
+
 .content {
   display: flex;
-  margin: 82px 0px 32px;
+  margin: 48px 0px 32px;
   max-width: 960px;
   flex-direction: column;
   align-items: center;
@@ -94,6 +157,7 @@ h6 {
 }
 
 /* tag styling */
+
 .tag {
   font-weight: 500;
   border-radius: 4px;
