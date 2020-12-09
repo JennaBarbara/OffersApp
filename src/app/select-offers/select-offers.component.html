@@ -27,6 +27,7 @@
           (click)="toggleOfferSelection(product.id)"
           [ngClass]="{'selected':selectedOffers.has(product.id)}">
           <div class="card-image-container" >
+            <span class="vertical-img-helper"></span>
             <img class="card-image" src = "{{product.image}}" alt="Product image" />
             <img class= "selected-icon" src = "./assets/icon_check.svg" alt="Offer selected" />
             <input class= "detail-btn" type = "image" (click) = "seeProductDetails(product)" src = "./assets/icon_info.svg" alt="See offer details" />
@@ -46,21 +47,19 @@
         </button>
       </div>
       </div>
+      <footer>
+        <img alt="BabyFirst Logo" src="./assets/img_publisher_logo.svg"/>
+        <div class="footer-link-container">
+          <div class="footer-column">
+            <a>Terms & Conditions</a>
+            <a>Privacy Policy</a>
+            <a>My Account</a>
+          </div>
+          <div class="footer-column">
+            <a>Terms of Service</a>
+            <a>Contact Us</a>
+            <a>Logout</a>
+          </div>
+        </div>
+      </footer>
     </ng-template>
-
-
-<footer>
-  <img alt="BabyFirst Logo" src="./assets/img_publisher_logo.svg"/>
-  <div class="footer-link-container">
-    <div class="footer-column">
-      <a>Terms & Conditions</a>
-      <a>Privacy Policy</a>
-      <a>My Account</a>
-    </div>
-    <div class="footer-column">
-      <a>Terms of Service</a>
-      <a>Contact Us</a>
-      <a>Logout</a>
-    </div>
-  </div>
-</footer>

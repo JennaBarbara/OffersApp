@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
+  display: flex;
   font-family: "Roboto", roboto;
   color: #333;
   font-weight: 500;
@@ -172,9 +173,8 @@ h6 {
 }
 
 .card-image {
-  display: block;
+  vertical-align: middle;
   margin: auto;
-  padding: 10px;
   max-height: 130px;
   max-width: 100%;
   width: auto;
@@ -259,11 +259,9 @@ h6 {
   cursor: not-allowed;
 }
 
-
 footer {
-  position: relative;
-  bottom: 0;
-  width: auto%;
+  margin-top: 35px;
+  margin-bottom: 52px;
   height: 180px;
   padding: 30px 25px;
   background-color: #ffffff;
@@ -279,18 +277,6 @@ footer {
   display: flex;
   padding: 20px;
 }
-
-
-/* .terminal {
-  position: relative;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 6px;
-  padding-top: 45px;
-  margin-top: 8px;
-  overflow: hidden;
-  background-color: rgb(15, 15, 16);
-} */
 
 
 
