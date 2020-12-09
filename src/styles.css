@@ -47,6 +47,7 @@ h6 {
 .progressbar {
   padding: 0px;
   margin: 10px 0px;
+  counter-reset: step;
 }
 .progressbar li {
     list-style-type: none;
@@ -60,7 +61,7 @@ h6 {
 .progressbar li:before {
     width: 30px;
     height: 30px;
-    content: counter(step);
+    content:'✓';
     counter-increment: step;
     line-height: 30px;
     display: block;
@@ -88,6 +89,7 @@ h6 {
     color: #3a99d8;
 }
 .progressbar li.active:before {
+  content: counter(step);
     background-color: #3a99d8;
 }
 .progressbar li.active + li:after {
@@ -97,6 +99,7 @@ h6 {
     color: #bfbfbf;
 }
 .progressbar li.active + li:before {
+    content: counter(step);
     background-color: #bfbfbf;
 }
 
