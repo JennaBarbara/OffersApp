@@ -23,6 +23,7 @@ export class SelectOffersComponent implements OnInit {
   }
   //selectOffer(offerID: number)
   selectOffer(offerID: number): void {
+    this.currentProduct = <Product>{};
     this.selectedOffers.add(offerID);
   }
 

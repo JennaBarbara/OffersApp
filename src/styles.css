@@ -192,25 +192,44 @@ h6 {
  background-color: #fbfdf6;
 }
 
-.btn {
+.btn-container {
   position: fixed;
   bottom: 0;
   margin-top: 8px;
   align-items: center;
   line-height: 20px;
-  height: 230px;
+  height: 80px;
   width: 100%;
   display: flex;
-  background-color: #ffffff;
+  background-color: #f4f4f4;
+  z-index: 1;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3a99d8;
+  display: block;
+  max-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  width: 325px;
+  height: 52px;
 }
 
 footer {
   position: relative;
+  bottom: 0;
   width: auto%;
   height: 180px;
   padding: 30px 25px;
   background-color: #ffffff;
-  z-index: 1;
+
 }
 .footer-column {
   width: 170px;
