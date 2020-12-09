@@ -12,7 +12,7 @@ export class OfferDetailsComponent implements OnInit {
   @Input() product: Product = <Product>{};
   @Input() selected: boolean = false;
 
-  @Output() onSelectOffer = new EventEmitter<Number>();
+  @Output() onToggleOffer = new EventEmitter<Number>();
   @Output() onCloseOffer = new EventEmitter<Number>();
   constructor(
     private route: ActivatedRoute,
@@ -20,8 +20,8 @@ export class OfferDetailsComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  selectOffer(): void {
-    this.onSelectOffer.emit(this.product.id);
+  toggleOfferSelection(): void {
+    this.onToggleOffer.emit();
   }
 
   closeOfferDetails(): void {

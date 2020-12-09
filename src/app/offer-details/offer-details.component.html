@@ -16,6 +16,6 @@
     <p>{{product.description}}</p>
   </div>
   <div class = "btn-container">
-    <button class = "button" (click)="selectOffer()" *ngIf = "!selected">Select Offer</button>
-    <button class = "button" (click)="selectOffer()" *ngIf = "selected">Deselect Offer</button>
+    <button class = "button" (click)="toggleOfferSelection()" *ngIf = "!selected">Select Offer</button>
+    <button class = "button" (click)="toggleOfferSelection()" *ngIf = "selected">Deselect Offer</button>
   </div>

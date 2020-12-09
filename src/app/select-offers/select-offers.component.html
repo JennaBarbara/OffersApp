@@ -4,7 +4,7 @@
       <app-offer-details
       [product] = "currentProduct"
       [selected] = "selectedOffers.has(currentProduct.id)"
-      (onSelectOffer) = "selectOffer(currentProduct.id)"
+      (onToggleOffer) = "toggleOfferSelection(currentProduct.id)"
       (onCloseOffer) = "closeOfferDetails()">
       </app-offer-details>
   </div>
