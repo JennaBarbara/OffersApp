@@ -26,7 +26,7 @@
           [ngClass]="{'selected':selectedOffers.has(product.id)}">
           <div class="card-image-container" >
             <img class="card-image" src = "{{product.image}}" alt="Product image" />
-            <img class= "selected-icon" src = "../assets/icon_check.svg" alt="Offer selected" />
+            <img class= "selected-icon" src = "./assets/icon_check.svg" alt="Offer selected" />
             <input class= "detail-btn" type = "image" (click) = "seeProductDetails(product)" src = "../assets/icon_info.svg" alt="See offer details" />
           </div>
           <span class = "tag" title={{product.tag}} >{{product.tag}}</span>
