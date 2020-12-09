@@ -38,7 +38,7 @@ export class SelectOffersComponent implements OnInit {
   }
 
   submitOfferSelection(): void {
-      console.log("ahhhhhh");
+    window.location.href = 'http://www.sampler.io';
   }
 
   seeProductDetails(product: Product): void {
