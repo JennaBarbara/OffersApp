@@ -13,7 +13,7 @@ export class OfferDetailsComponent implements OnInit {
   @Input() selected: boolean = false;
 
   @Output() onSelectOffer = new EventEmitter<Number>();
-
+  @Output() onCloseOffer = new EventEmitter<Number>();
   constructor(
     private route: ActivatedRoute,
   ) { }
@@ -24,4 +24,7 @@ export class OfferDetailsComponent implements OnInit {
     this.onSelectOffer.emit(this.product.id);
   }
 
+  closeOfferDetails(): void {
+    this.onCloseOffer.emit();
+  }
 }

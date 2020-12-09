@@ -46,7 +46,7 @@ export class SelectOffersComponent implements OnInit {
 
   }
 
-  closeProductDetails(): void {
+  closeOfferDetails(): void {
     this.currentProduct = <Product>{};
   }
 

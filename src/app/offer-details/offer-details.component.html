@@ -1,4 +1,7 @@
-<div>
+<div class="toolbar" role="banner">
+  <span>Offer Details</span>
+  <span class="close-button" (click)="closeOfferDetails()">&#10006;</span>
+</div>
   <div class="product-image-container">
     <span class="vertical-img-helper"></span>
     <img class="product-image" src = "{{product.image}}" alt="Product image"/>
@@ -16,4 +19,3 @@
     <button class = "button" (click)="selectOffer()" *ngIf = "!selected">Select Offer</button>
     <button class = "button" (click)="selectOffer()" *ngIf = "selected">Deselect Offer</button>
   </div>
-</div>

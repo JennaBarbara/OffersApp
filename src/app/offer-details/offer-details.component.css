@@ -1,7 +1,14 @@
+.close-button {
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+  right: 25px;
+  top: 7px;
+}
+
 .product-info {
   padding: 22px;
 }
-
 
 .brand-info {
   display: block;

@@ -1,16 +1,18 @@
 
-<div class="toolbar" role="banner">
-  <span>BabyFirst</span>
-</div>
-<div class = "content" >
+
   <div *ngIf = "(currentProduct| json) != '{}'; else offersListBlock">
       <app-offer-details
       [product] = "currentProduct"
       [selected] = "selectedOffers.has(currentProduct.id)"
-      (onSelectOffer) = "selectOffer(currentProduct.id)" >
+      (onSelectOffer) = "selectOffer(currentProduct.id)"
+      (onCloseOffer) = "closeOfferDetails()">
       </app-offer-details>
   </div>
   <ng-template #offersListBlock>
+    <div class="toolbar" role="banner">
+      <span>BabyFirst</span>
+    </div>
+    <div class = "content" >
     <div class="progressbar-container">
       <ul class="progressbar">
         <li>Profile</li>
@@ -18,7 +20,7 @@
         <li>Success</li>
       </ul>
     </div>
-    <h3>Pick your offers</h3>
+    <h3 class= "offers-title">Pick your offers</h3>
       <div class="card-container">
         <a class="card"
           *ngFor="let product of products"
@@ -43,8 +45,9 @@
           {{selectedOffers.size}} of 5 offers selected
         </button>
       </div>
+      </div>
     </ng-template>
-  </div>
+
 
 <footer>
   <img alt="BabyFirst Logo" src="./assets/img_publisher_logo.svg"/>
