@@ -10,6 +10,7 @@ import { Product } from '../types'
 })
 export class OfferDetailsComponent implements OnInit {
   @Input() product: Product = <Product>{};
+  @Input() selected: boolean = false;
 
   @Output() onSelectOffer = new EventEmitter<Number>();
 

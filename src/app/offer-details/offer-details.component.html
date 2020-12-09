@@ -1,15 +1,19 @@
 <div>
   <div class="product-image-container">
+    <span class="vertical-img-helper"></span>
     <img class="product-image" src = "{{product.image}}" alt="Product image"/>
   </div>
-  <span class = "tag" title={{product.tag}} >{{product.tag}}</span>
-  <p>{{product.name}}</p>
-  <div class="brand-info">
-    <img src = "{{product.logo}}" alt="Product image"/>
-    <p>{{product.brand}}</p>
-  </div>
+  <div class= "product-info">
+    <span class = "tag" title={{product.tag}} >{{product.tag}}</span>
+    <h3>{{product.name}}</h3>
+    <div class="brand-info">
+      <img class="brand-logo" src = "{{product.logo}}" alt="Brand logo"/>
+      <span class="brand-name">{{product.brand}}</span>
+    </div>
     <p>{{product.description}}</p>
+  </div>
   <div class = "btn-container">
-    <button class = "button" (click)="selectOffer()">Select Offer</button>
+    <button class = "button" (click)="selectOffer()" *ngIf = "!selected">Select Offer</button>
+    <button class = "button" (click)="selectOffer()" *ngIf = "selected">Deselect Offer</button>
   </div>
 </div>

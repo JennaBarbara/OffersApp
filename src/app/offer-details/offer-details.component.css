@@ -1,14 +1,38 @@
-.product-image-container {
+.product-info {
+  padding: 22px;
+}
+
+
+.brand-info {
   display: block;
+  vertical-align: middle;
+  border-bottom:  2px solid #dddddd;
+}
+
+.brand-logo {
+  height:37px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.brand-name {
+}
+
+
+.product-image-container {
+  text-align: center;
+  display: block;
+  height: 181px;
   margin: auto;
   width: 100%;
+  vertical-align: middle;
   background-color: #ffffff;
 }
 
 .product-image {
-  display: block;
   max-height: 130px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: middle;
 }

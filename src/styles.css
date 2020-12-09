@@ -122,21 +122,42 @@ h6 {
   background-color: #ffffff;
   height: 240px;
   width: 160px;
-  margin: 0 7px 17px;
+  margin: 1px 7px 17px;
   padding: 14px;
   transition: all 0.2s ease-in-out;
   margin-right: 0;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.card.selected {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid #39ca74;
+  margin: 0 6px 16px;
 }
 
 .card-image-container {
+  text-align: center;
   display: block;
   position: relative;
   height: 150px;
   padding: 10px;
 }
 
-.selected-icon {
+.vertical-img-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+.card .selected-icon {
+  display: none;
+}
+
+
+.selected .selected-icon {
+  display: block;
   position: absolute;
   height: 20px;
   top: 0;
@@ -144,6 +165,7 @@ h6 {
 
 .detail-btn {
   position: absolute;
+  cursor: pointer;
   top: 0;
   right: 0;
 }
@@ -211,6 +233,7 @@ h6 {
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
+  font-weight: 400;
   cursor: pointer;
   background-color: #3a99d8;
   display: block;
@@ -221,6 +244,20 @@ h6 {
   width: 325px;
   height: 52px;
 }
+
+.button.too-few-selected {
+  background-color: #bfbfbf;
+  cursor: not-allowed;
+}
+.button.submit-selection {
+  background-color: #39ca74;
+}
+
+.button.too-many-selected {
+  background-color: red;
+  cursor: not-allowed;
+}
+
 
 footer {
   position: relative;

@@ -21,15 +21,29 @@ export class SelectOffersComponent implements OnInit {
     this.products = data.products;
     console.log(this.products);
   }
-  //selectOffer(offerID: number)
+
   selectOffer(offerID: number): void {
     this.currentProduct = <Product>{};
     this.selectedOffers.add(offerID);
   }
 
+  toggleOfferSelection(offerID: number): void {
+    this.currentProduct = <Product>{};
+    if(this.selectedOffers.has(offerID)){
+      this.selectedOffers.delete(offerID);
+    }
+    else{
+          this.selectedOffers.add(offerID);
+    }
+  }
+
+  submitOfferSelection(): void {
+      console.log("ahhhhhh");
+  }
+
   seeProductDetails(product: Product): void {
     this.currentProduct = product;
-    console.log("ahhhhhh");
+
   }
 
   closeProductDetails(): void {
