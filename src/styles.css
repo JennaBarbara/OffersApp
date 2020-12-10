@@ -36,7 +36,6 @@ h6 {
 /* progress bar styling */
 
 .progressbar-container {
-
   height: 70px;
   width: 100%;
   background-color: #f4f4f4;
@@ -77,7 +76,7 @@ h6 {
     position: absolute;
     color: #5ee09e;
     background-color: #5ee09e;
-    top: 15px;
+    top: 12px;
     left: -50%;
     z-index: -1;
 }
@@ -102,6 +101,8 @@ h6 {
     background-color: #bfbfbf;
 }
 
+/* main content  */
+
 .content {
   position: relative;
   left: 0;
@@ -111,6 +112,7 @@ h6 {
   align-items: center;
 }
 
+/* card styling */
 
 .card-container {
   display: flex;
@@ -221,6 +223,8 @@ h6 {
  background-color: #fbfdf6;
 }
 
+/* button styling */
+
 .btn-container {
   position: fixed;
   bottom: 0;
@@ -264,6 +268,8 @@ h6 {
   background-color: red;
   cursor: not-allowed;
 }
+
+/* footer styling */
 
 footer {
   margin-top: 35px;
