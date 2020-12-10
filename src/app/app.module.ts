@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { SelectOffersComponent } from './select-offers/select-offers.component';
@@ -13,8 +12,7 @@ import { SelectOffersComponent } from './select-offers/select-offers.component';
     SelectOffersComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

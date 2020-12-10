@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 import { Product } from '../types'
 
@@ -15,7 +14,6 @@ export class OfferDetailsComponent implements OnInit {
   @Output() onToggleOffer = new EventEmitter<Number>();
   @Output() onCloseOffer = new EventEmitter<Number>();
   constructor(
-    private route: ActivatedRoute,
   ) { }
 
   ngOnInit(): void { }
