@@ -117,7 +117,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 16px;
+  margin: 16px;
 
 }
 
@@ -125,7 +125,7 @@ h6 {
   border-radius: 5px;
   border: 1px solid #c7c7c7;
   background-color: #ffffff;
-  height: 240px;
+  height: 242px;
   width: 160px;
   margin: 1px 7px 17px;
   padding: 14px;
@@ -186,13 +186,18 @@ h6 {
 /* tag styling */
 
 .tag {
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 4px;
-  padding: 5px;
   border: 1px solid;
+  height: 19px;
+  width: 75px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
+  display: flex;
+justify-content: center;
+align-items: center;
 }
+
 
  .tag[title="All Ages"] {
   color: #334659;
