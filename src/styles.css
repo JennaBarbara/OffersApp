@@ -271,7 +271,10 @@ footer {
   height: 180px;
   padding: 30px 25px;
   background-color: #ffffff;
+}
 
+footer img {
+  padding-bottom: 40px;
 }
 .footer-column {
   width: 170px;
@@ -281,5 +284,17 @@ footer {
   font-size: 13px;
   font-weight: 400;
   display: flex;
-  padding: 20px;
+  padding: 10px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+  .footer-column {
+    width: 50%;
+    float: left;
+  }
+
 }
