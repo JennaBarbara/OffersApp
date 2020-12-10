@@ -22,11 +22,6 @@ export class SelectOffersComponent implements OnInit {
     console.log(this.products);
   }
 
-  selectOffer(offerID: number): void {
-    this.currentProduct = <Product>{};
-    this.selectedOffers.add(offerID);
-  }
-
   toggleOfferSelection(offerID: number): void {
     this.currentProduct = <Product>{};
     if(this.selectedOffers.has(offerID)){

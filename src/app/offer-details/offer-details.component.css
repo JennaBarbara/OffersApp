@@ -1,5 +1,6 @@
 .close-button {
   position: absolute;
+  color: #ffffff;
   cursor: pointer;
   font-size: 24px;
   right: 25px;

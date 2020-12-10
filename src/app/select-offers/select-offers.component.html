@@ -1,13 +1,12 @@
 
 
-  <div *ngIf = "(currentProduct| json) != '{}'; else offersListBlock">
-      <app-offer-details
-      [product] = "currentProduct"
-      [selected] = "selectedOffers.has(currentProduct.id)"
-      (onToggleOffer) = "toggleOfferSelection(currentProduct.id)"
-      (onCloseOffer) = "closeOfferDetails()">
-      </app-offer-details>
-  </div>
+<app-offer-details
+   *ngIf = "(currentProduct| json) != '{}'; else offersListBlock"
+  [product] = "currentProduct"
+  [selected] = "selectedOffers.has(currentProduct.id)"
+  (onToggleOffer) = "toggleOfferSelection(currentProduct.id)"
+  (onCloseOffer) = "closeOfferDetails()">
+</app-offer-details>
   <ng-template #offersListBlock>
     <div class="toolbar" role="banner">
       <span>BabyFirst</span>
