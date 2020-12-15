@@ -38,7 +38,6 @@ export class SelectOffersComponent implements OnInit {
 
   seeProductDetails(product: Product): void {
     this.currentProduct = product;
-
   }
 
   closeOfferDetails(): void {

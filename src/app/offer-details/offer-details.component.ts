@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 import { Product } from '../types'
 
@@ -7,16 +7,14 @@ import { Product } from '../types'
   templateUrl: './offer-details.component.html',
   styleUrls: ['./offer-details.component.css']
 })
-export class OfferDetailsComponent implements OnInit {
+export class OfferDetailsComponent{
   @Input() product: Product = <Product>{};
   @Input() selected: boolean = false;
 
-  @Output() onToggleOffer = new EventEmitter<Number>();
-  @Output() onCloseOffer = new EventEmitter<Number>();
+  @Output() onToggleOffer = new EventEmitter();
+  @Output() onCloseOffer = new EventEmitter();
   constructor(
   ) { }
-
-  ngOnInit(): void { }
 
   toggleOfferSelection(): void {
     this.onToggleOffer.emit();
